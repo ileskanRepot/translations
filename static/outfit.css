@@ -1,0 +1,41 @@
+body {
+	text-align: center;
+}
+
+form {
+	border: 1px solid black;
+	padding: 1%;
+	flex-direction: column;
+	display: flex;
+}
+
+.colmAlign {
+	flex-direction: row;
+	display: flex;
+	text-align: center;
+}
+
+.rowAlign {
+	flex-direction: column;
+	display: flex;
+	width: 48%;
+}
+
+table,td,th {
+	border: 1px solid black;
+}
+table {
+	width: 100%;
+	margin: 0 0 1em 0;
+}
+th {
+	width: 33%;
+}
+
+
+#left{
+	margin: 0 2% 0 0;
+}
+#right{
+	margin: 0 0 0 2%;
+}

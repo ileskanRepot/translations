@@ -1,0 +1,41 @@
+<head>
+  <title>Sanoja</title>
+	<link rel="stylesheet" href="/static/outfit.css" />
+</head>
+<h1>Sanoja</h1>
+
+<body>
+  <table>
+    <tr>
+      <th>En</th>
+      <th>Fi</th>
+      <th>Explanation</th>
+    </tr>
+		{% for trans in translations %}
+    	<tr>
+				<td>{{ trans["en"] }}</td>
+				<td>{{ trans["fi"] }}</td>
+				<td>{{ trans["expl"] }}</td>
+    	</tr>
+		{% endfor %}
+  </table>
+  <form action="/" method="POST">
+		<h1>Add new translation</h1>
+		<div class="colmAlign">
+			<div class="rowAlign" id="left">
+				<label for="en">English:</label>
+    		<input type="text" id="en" name="en" />
+			</div>
+
+			<div class="rowAlign" id="right">
+				<label for="fi">Finnish:</label>
+    		<input type="text" id="fi" name="fi" />
+			</div>
+		</div>
+
+		<label for="expl">Explanation:</label>
+    <input type="text" id="expl" name="expl" />
+
+    <input type="submit" value="Add new translation" />
+  </form>
+</body>
