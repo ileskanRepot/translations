@@ -2,4 +2,11 @@ services:
   web:
     build: .
     ports:
-      - 4000:8000
+      - 5100:8000
+        # redis:
+        # image: "redis:alpine"
+
+        # networks:
+        # web:
+        # name: isUp
+        # driver: isUpDriver
